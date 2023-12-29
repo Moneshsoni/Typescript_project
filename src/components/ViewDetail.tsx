@@ -1,10 +1,6 @@
 import React from 'react'
-import {Books} from './Book'
-interface Prop{
-    books:Books[]
-}
 
-const ViewDetail = ({{books}:Prop}) => {
+const ViewDetail = () => {
   return (
     <div className='view-container'>
       <table>
@@ -16,14 +12,13 @@ const ViewDetail = ({{books}:Prop}) => {
             </tr>
         </thead>
         <tbody>
-            {books.map((item:{title:string,author:string,price:string}
+            
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
 
             </tr>
-           ))}
         </tbody>
       </table>
 

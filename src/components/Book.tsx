@@ -22,35 +22,32 @@ const Book=()=>{<></>
        price:""
     });
 
-    const [books,setBook]= useState<Books>([])
+    // const [books,setBook]= useState<Books>([])
 
     const handlesubmit=(e:React.FormEvent<HTMLFormElement>)=>{
 
     }
 
-    const handlechange =(e:React.ChangeEvent<HTMLInputElement>)=>{
-        const {name,value}=e.target;
-        setformValue({...value,[name]:value
-})
+//     const handlechange =(e:React.ChangeEvent<HTMLInputElement>)=>{
+//         const {name,value}=e.target;
+// })
 
-    }
     return(
         <div>
             <div className='form-container'>
                 <form onSubmit={handlesubmit}>
                     <label htmlFor="">title</label>
-                    <input type = "text" value={formValue.title} name="title" onChange={()=>{handlechange()}}/>
-                    <input type = "text" value={formValue.author} name="author" onChange={()=>{handlechange()}}/>
+                    <input type = "text"  name="title" />
+                    <input type = "text"  name="author" />
                     <label htmlFor="">author</label>
                     <label htmlFor="">price</label>
-                    <input type = "text" value={formValue.price} name="price" onChange={()=>{handlechange()}}/>
+                    <input type = "text"  name="price" />
 
                     <button type = "submit" >Add</button>
                     <button type = "submit">Add</button>
                 </form>
 
             </div>
-        <ViewDetail  books={books}/>
         </div>
     )
-} 
+}
