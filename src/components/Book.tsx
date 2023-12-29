@@ -40,8 +40,8 @@ const Book=()=>{<></>
                 <form onSubmit={handlesubmit}>
                     <label htmlFor="">title</label>
                     <input type = "text" value={formValue.title} name="title" onChange={()=>{handlechange()}}/>
-                    <label htmlFor="">author</label>
                     <input type = "text" value={formValue.author} name="author" onChange={()=>{handlechange()}}/>
+                    <label htmlFor="">author</label>
                     <label htmlFor="">price</label>
                     <input type = "text" value={formValue.price} name="price" onChange={()=>{handlechange()}}/>
 
@@ -50,7 +50,7 @@ const Book=()=>{<></>
                 </form>
 
             </div>
-        <ViewDetail />
+        <ViewDetail  books={books}/>
         </div>
     )
 } 
